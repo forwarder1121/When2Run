@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>When2Run : BasketBall</title>
+
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/button.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/quarter.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="two alt-two header">
+      <h1>
+        🏃🏻 When 2 Run 🏃🏻 <br />
+        <span>Just decide on the number</span>
+      </h1>
+    </div>
+
+    <div id="NumOfPeopleForm">
+      <h1 class="NumOfPeopleForm_title">Number Of People</h1>
+
+      <input
+        class="NumOfPeopleForm_input"
+        type="number"
+        id="whiteTotal"
+        placeholder="Greater than 5"
+        required
+        min="5" />
+    </div>
+
+    <div class="quartersBtns">
+      <h2 class="quartersBtns_title">Quarters</h2>
+      <button id="createBtn" class="btn-hover color-8">Create</button>
+      <button id="deleteBtn" class="btn-hover color-8">Reset</button>
+    </div>
+
+    <div id="history"></div>
+
+    <script src="js/history.js"></script>
+  </body>
+</html>

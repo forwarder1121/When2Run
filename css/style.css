@@ -1,0 +1,73 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+
+  background-color: #000000;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+
+h1 {
+  font-size: 20px;
+  font-weight: bold;
+}
+p {
+  font-size: 15px;
+}
+
+#NumOfPeopleForm {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  margin-left: 50px;
+  margin-bottom: 30px;
+}
+
+.NumOfPeopleTeam {
+  margin: 2px 0;
+}
+.NumOfPeopleForm_title {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+.NumOfPeopleForm_input {
+  width: 40%;
+}
+
+.quartersBtns {
+  display: flex;
+  flex-direction: row;
+  margin-left: 50px;
+}
+.quartersBtns_title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+#createBtn {
+  margin-right: 4px;
+}
+
+#history {
+  margin-top: 10px;
+  margin-left: 50px;
+}
+
+#NumOfPeopleNeededForm {
+  margin-left: 50px;
+}
+
+.NumOfPeopleNeededForm_title {
+  font-size: 15px;
+}

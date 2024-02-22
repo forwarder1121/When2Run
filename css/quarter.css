@@ -1,0 +1,37 @@
+.quarter {
+  width: 90%;
+  padding: 2rem 4rem;
+  font-family: "Satisfy", cursive;
+  position: relative;
+  background: rgba(0, 0, 0, 0.02);
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+}
+
+.quarter:before,
+.quarter:after {
+  content: "";
+  position: absolute;
+  width: 1rem;
+  height: 1rem;
+  border: 2px solid rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
+}
+.quarter:before {
+  top: 0;
+  left: 0;
+  border-width: 2px 0 0 2px;
+  transform: translate(-2px, -2px);
+}
+.quarter:after {
+  bottom: 0;
+  right: 0;
+  border-width: 0 2px 2px 0;
+  transform: translate(2px, 2px);
+}
+
+.quarter_title {
+  font-size: larger;
+  font-weight: bolder;
+  margin-bottom: 4px;
+}
