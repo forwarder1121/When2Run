@@ -41,6 +41,7 @@ p {
   display: flex;
   flex-direction: row;
   margin-left: 50px;
+  margin-bottom: 10px;
 }
 .quartersBtns_title {
   font-size: 20px;

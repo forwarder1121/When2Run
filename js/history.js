@@ -14,27 +14,42 @@ const handleCreateBtnClick = (event) => {
 };
 
 const calculateRunningNumbers = (currentQuarter) => {
-  let runningNumbers = "Running Nums : ";
+  let runningNumbers = "⛹🏼‍♂️ : ";
   let startsNum = (1 + 5 * (currentQuarter - 1)) % whiteTotal;
+  let runningNumsArray = [];
 
   for (let i = 0; i < 5; i++) {
-    curNum = (startsNum + i) % whiteTotal;
+    let curNum = (startsNum + i) % whiteTotal;
     if (curNum == 0) curNum = whiteTotal;
-    runningNumbers = runningNumbers.concat(` ${curNum}`);
+    runningNumsArray.push(curNum);
   }
+
+  runningNumsArray.sort((a, b) => a - b); // 정렬
+
+  runningNumsArray.forEach((num) => {
+    runningNumbers = runningNumbers.concat(` ${num}`);
+  });
 
   return runningNumbers;
 };
 
 const calculateRestingNumbers = (currentQuarter) => {
-  let restingNumbers = "Resting Nums : ";
+  let restingNumbers = "💤 : ";
   const numberOfRestNumbers = whiteTotal - 5;
   let startsNum = (1 + 5 * currentQuarter) % whiteTotal;
+
+  const restingNumsArray = [];
+
   for (let i = 0; i < numberOfRestNumbers; i++) {
     curNum = (startsNum + i) % whiteTotal;
     if (curNum == 0) curNum = whiteTotal;
-    restingNumbers = restingNumbers.concat(` ${curNum}`);
+
+    restingNumsArray.push(curNum);
   }
+
+  restingNumsArray.sort((a, b) => a - b);
+
+  restingNumbers = restingNumbers.concat(` ${restingNumsArray.join(" ")}`);
   return restingNumbers;
 };
 
@@ -47,10 +62,12 @@ const printQuarter = (currentQuarter) => {
 
   //create runningNumbers
   const runningNumbers = document.createElement("div");
+  runningNumbers.className = "quarter_numbers";
   runningNumbers.innerHTML = calculateRunningNumbers(currentQuarter);
 
   //create restingNumbers
   const restingNumbers = document.createElement("div");
+  restingNumbers.className = "quarter_numbers";
   restingNumbers.innerHTML = calculateRestingNumbers(currentQuarter);
 
   //append DeleteButton
