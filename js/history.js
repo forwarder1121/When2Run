@@ -20,7 +20,7 @@ const calculateRunningNumbers = (currentQuarter) => {
   for (let i = 0; i < 5; i++) {
     curNum = (startsNum + i) % whiteTotal;
     if (curNum == 0) curNum = whiteTotal;
-    runningNumbers = runningNumbers.concat(curNum);
+    runningNumbers = runningNumbers.concat(` ${curNum}`);
   }
 
   return runningNumbers;
@@ -33,7 +33,7 @@ const calculateRestingNumbers = (currentQuarter) => {
   for (let i = 0; i < numberOfRestNumbers; i++) {
     curNum = (startsNum + i) % whiteTotal;
     if (curNum == 0) curNum = whiteTotal;
-    restingNumbers = restingNumbers.concat(curNum);
+    restingNumbers = restingNumbers.concat(` ${curNum}`);
   }
   return restingNumbers;
 };
