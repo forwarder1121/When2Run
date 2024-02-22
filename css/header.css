@@ -30,7 +30,7 @@ h1 em {
 .two h1:before {
   position: absolute;
   left: 0;
-  bottom: 0;
+  top: 170px;
   width: 60px;
   height: 2px;
   content: "";

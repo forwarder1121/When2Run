@@ -19,8 +19,8 @@ p {
 
 #NumOfPeopleForm {
   display: flex;
-  flex-direction: column;
-  margin-top: 30px;
+
+  margin-top: 50px;
   margin-left: 50px;
   margin-bottom: 30px;
 }
@@ -31,9 +31,10 @@ p {
 .NumOfPeopleForm_title {
   font-size: 20px;
   margin-bottom: 5px;
+  margin-right: 20px;
 }
 .NumOfPeopleForm_input {
-  width: 40%;
+  width: 30%;
 }
 
 .quartersBtns {
