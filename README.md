@@ -28,7 +28,11 @@ https://url.kr/vjiogp
 
 ![image](https://github.com/forwarder1121/forwarder1121.github.io/assets/66872094/cc59c5f7-91e6-47d9-b1f3-26914232c187)
 
+---
 
+## Stack
+
+html, CSS, Vanilla JS
 
 ---
 
