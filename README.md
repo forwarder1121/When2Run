@@ -23,6 +23,9 @@ https://url.kr/vjiogp
 
 ---
 
+휴대폰 화면으로 보는 것을 추천합니다.
+(웹 사용 환경 특성상 휴대폰으로 볼 일이 많다는 것을 반영)
+
 ![image](https://github.com/forwarder1121/forwarder1121.github.io/assets/66872094/cc59c5f7-91e6-47d9-b1f3-26914232c187)
 
 
